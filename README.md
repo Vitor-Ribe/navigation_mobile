@@ -1,16 +1,12 @@
 # navigation_mobile
 
-A new Flutter project.
+Projeto desenvolvido para disciplina Desenvolvimento de Aplicações para Dispositivos Móveis.
 
-## Getting Started
+## Objetivo
 
-This project is a starting point for a Flutter application.
+Compreender e implementar formas de navegação entre páginas na aplicação Flutter.
 
-A few resources to get you started if this is your first Flutter project:
+## Bibliotecas externas
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- *curved_navigation_bar*
+    Animação e design moderno para a bottom navigation bar _(curved_navigation_bar: ^1.0.6)_
