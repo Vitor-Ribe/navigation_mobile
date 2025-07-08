@@ -6,7 +6,7 @@ Projeto desenvolvido para disciplina Desenvolvimento de Aplicações para Dispos
 
 Compreender e implementar formas de navegação entre páginas na aplicação Flutter.
 
-## Bibliotecas externas
+## Bibliotecas externas :books:
 
 - **curved_navigation_bar**
 
