@@ -1,8 +1,8 @@
-# navigation_mobile
+# navigation_mobile :iphone:
 
 Projeto desenvolvido para disciplina Desenvolvimento de Aplicações para Dispositivos Móveis.
 
-## Objetivo
+## Objetivo :dart:
 
 Compreender e implementar formas de navegação entre páginas na aplicação Flutter.
 
