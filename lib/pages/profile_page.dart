@@ -23,7 +23,7 @@ class ProfilePage extends StatelessWidget {
             ),
             SizedBox(height: 8),
             Text(
-              'usuario@email.com',
+              'usuario@ifnmg.edu.br',
               style: TextStyle(fontSize: 16, color: Colors.black54),
             ),
           ],

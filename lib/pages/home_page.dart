@@ -10,10 +10,10 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
-          children: const [
-            Icon(Icons.home, size: 80, color: Colors.blue),
-            SizedBox(height: 20),
-            Text(
+          children: [
+            const Icon(Icons.home, size: 80, color: Colors.blue),
+            const SizedBox(height: 20),
+            const Text(
               'Bem-vindo ao aplicativo!',
               style: TextStyle(fontSize: 40, color: Colors.blue),
               textAlign: TextAlign.center,
