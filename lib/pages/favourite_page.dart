@@ -7,11 +7,6 @@ class FavouritePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: const Text('Favoritos'),
-        centerTitle: true,
-        backgroundColor: Colors.blueGrey,
-      ),
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,

@@ -7,20 +7,15 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: const Text('Página Inicial'),
-        centerTitle: true,
-        backgroundColor: Colors.blueGrey,
-      ),
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: const [
-            Icon(Icons.home, size: 80, color: Colors.blueGrey),
+            Icon(Icons.home, size: 80, color: Colors.blue),
             SizedBox(height: 20),
             Text(
               'Bem-vindo ao aplicativo!',
-              style: TextStyle(fontSize: 24, color: Colors.black87),
+              style: TextStyle(fontSize: 40, color: Colors.blue),
               textAlign: TextAlign.center,
             ),
           ],

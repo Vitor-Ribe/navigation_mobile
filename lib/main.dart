@@ -35,7 +35,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int index = 1;
+  int index = 0;
 
   final screens = [
     HomePage(),
@@ -66,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text(pageTitles[index]),
+        title: Text(pageTitles[index], style: TextStyle(color: Colors.blue.shade900)),
         elevation: 0,
         backgroundColor: Colors.transparent,
         centerTitle: true

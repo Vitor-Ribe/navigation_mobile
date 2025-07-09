@@ -99,13 +99,13 @@ class _ImcPageState extends State<ImcPage> {
                         Text(
                           resultado.isEmpty ? 'IMC' : resultado,
                           textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.white, fontSize: resultado.isEmpty ? 60 : 28),
+                          style: TextStyle(color: Colors.white, fontSize: resultado.isEmpty ? 70 : 30),
                         ),
                         if (classificacao.isNotEmpty)
                           Text(
                             classificacao,
                             textAlign: TextAlign.center,
-                            style: TextStyle(color: Colors.white, fontSize: 22),
+                            style: TextStyle(color: Colors.white, fontSize: 30),
                           ),
                       ],
                     ),
@@ -120,7 +120,7 @@ class _ImcPageState extends State<ImcPage> {
               alignment: Alignment.centerLeft,
               child: Text(
                   'Peso',
-                  style: TextStyle(color: Colors.blueGrey, fontSize: 30)
+                  style: TextStyle(color: Colors.blueGrey, fontSize: 20)
               ),
             ),
 
@@ -131,13 +131,25 @@ class _ImcPageState extends State<ImcPage> {
               controller: pesoController,
               keyboardType: TextInputType.number,
               decoration: InputDecoration(
-                  hintText: 'Digite seu peso aqui (Kg)',
-                  border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10)
-                  ),
-                  filled: true,
-                  fillColor: Colors.grey.shade100
-              ),
+                hintText: 'Digite seu peso aqui (Kg)',
+                hintStyle: TextStyle(fontSize: 16, color: Colors.grey.shade500),
+                filled: true,
+                fillColor: Colors.grey.shade100,
+                contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(25),
+                  borderSide: BorderSide.none,
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(25),
+                  borderSide: BorderSide(color: Colors.transparent),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(25),
+                  borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                ),
+                prefixIcon: Icon(Icons.monitor_weight_outlined, color: Colors.blueGrey),
+              )
             ),
 
             SizedBox(height: 20),
@@ -147,7 +159,7 @@ class _ImcPageState extends State<ImcPage> {
               alignment: Alignment.centerLeft,
               child: Text(
                   'Altura',
-                  style: TextStyle(color: Colors.blueGrey, fontSize: 30)
+                  style: TextStyle(color: Colors.blueGrey, fontSize: 20)
               ),
             ),
 
@@ -157,14 +169,26 @@ class _ImcPageState extends State<ImcPage> {
             TextField(
               controller: alturaController,
               keyboardType: TextInputType.number,
-              decoration: InputDecoration(
-                  hintText: 'Digite sua altura aqui (m)',
-                  border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10)
-                  ),
+                decoration: InputDecoration(
+                  hintText: 'Digite sua altura aqui (Kg)',
+                  hintStyle: TextStyle(fontSize: 16, color: Colors.grey.shade500),
                   filled: true,
-                  fillColor: Colors.grey.shade100
-              ),
+                  fillColor: Colors.grey.shade100,
+                  contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(25),
+                    borderSide: BorderSide.none,
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(25),
+                    borderSide: BorderSide(color: Colors.transparent),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(25),
+                    borderSide: BorderSide(color: Colors.blueGrey, width: 2),
+                  ),
+                  prefixIcon: Icon(Icons.accessibility_outlined, color: Colors.blueGrey),
+                )
             ),
 
             SizedBox(height: 80),
