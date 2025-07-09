@@ -1,10 +1,10 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:navigation_mobile/pages/water.dart';
+import 'package:navigation_mobile/pages/water_page.dart';
 import 'package:navigation_mobile/pages/home_page.dart';
 import 'package:navigation_mobile/pages/imc_page.dart';
 import 'package:navigation_mobile/pages/profile_page.dart';
-import 'package:navigation_mobile/pages/settings_page.dart';
+import 'package:navigation_mobile/pages/gordura_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,13 +35,13 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int index = 2;
+  int index = 3;
 
   final screens = [
     HomePage(),
     ImcPage(),
     WaterPage(),
-    SettingsPage(),
+    GorduraPage(),
     ProfilePage()
   ];
 
@@ -49,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
     'Home',
     'Cálculo de IMC',
     'Calculadora de Água Diária',
-    'Settings Page',
+    'Percentual de Gordura Corporal',
     'Profile Page'
   ];
 
@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
       Icon(Icons.home, size: 30, color: Colors.white),
       Icon(Icons.monitor_heart, size: 30, color: Colors.white),
       Icon(Icons.water_drop, size: 30, color: Colors.white),
-      Icon(Icons.settings, size: 30, color: Colors.white),
+      Icon(Icons.percent, size: 30, color: Colors.white),
       Icon(Icons.person, size: 30, color: Colors.white)
     ];
 
