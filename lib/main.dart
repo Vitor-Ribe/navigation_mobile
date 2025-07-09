@@ -1,6 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:navigation_mobile/pages/favourite_page.dart';
+import 'package:navigation_mobile/pages/water.dart';
 import 'package:navigation_mobile/pages/home_page.dart';
 import 'package:navigation_mobile/pages/imc_page.dart';
 import 'package:navigation_mobile/pages/profile_page.dart';
@@ -35,12 +35,12 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int index = 0;
+  int index = 2;
 
   final screens = [
     HomePage(),
     ImcPage(),
-    FavouritePage(),
+    WaterPage(),
     SettingsPage(),
     ProfilePage()
   ];
@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final pageTitles = [
     'Home',
     'Cálculo de IMC',
-    'Favourite Page',
+    'Calculadora de Água Diária',
     'Settings Page',
     'Profile Page'
   ];
@@ -58,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
     final items = <Widget> [
       Icon(Icons.home, size: 30, color: Colors.white),
       Icon(Icons.monitor_heart, size: 30, color: Colors.white),
-      Icon(Icons.favorite, size: 30, color: Colors.white),
+      Icon(Icons.water_drop, size: 30, color: Colors.white),
       Icon(Icons.settings, size: 30, color: Colors.white),
       Icon(Icons.person, size: 30, color: Colors.white)
     ];
